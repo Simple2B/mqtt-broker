@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  mqtt:
+    build: .
+    image: simple2b/motovilovka_mqtt_broker
+
