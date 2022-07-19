@@ -1,4 +1,9 @@
-.git
-.git/
+*/.git
+*/.git/
 LICENSE
 README.md
+*/__pycache__
+*/__pycache__/
+*/env/
+*/.venv/
+*/.pytest_cache/
