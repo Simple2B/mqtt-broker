@@ -12,12 +12,12 @@ class SignUpModel(BaseModel):
 
 @app.post("/user")
 def set_user(signup_data: SignUpModel):
-    subprocess.call(["mqtt-set-user", signup_data.login, signup_data.password])
-    return {"success": True}
+    err = subprocess.call(["mqtt-set-user", signup_data.login, signup_data.password])
+    return {"error": err}
 
 
 @app.delete("/user/{login}")
 def remove_user(login: str):
-    subprocess.call(["mqtt-remove-user", login])
-    return {"success": True}
+    err = subprocess.call(["mqtt-remove-user", login])
+    return {"success": err}
 
