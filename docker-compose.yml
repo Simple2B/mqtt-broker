@@ -4,4 +4,10 @@ services:
   mqtt:
     build: .
     image: simple2b/motovilovka_mqtt_broker
+    ports:
+      - 127.0.0.1:1883:1883
+      - 127.0.0.1:9001:9001
+      - 127.0.0.1:9000:80
+    environment:
+      API_PORT: 80
 
