@@ -5,8 +5,9 @@ WORKDIR /mosquitto
 RUN mkdir -p config
 RUN mkdir -p log
 RUN mkdir -p data
+RUN mkdir -p users
 
-RUN touch config/passwd.txt
+RUN touch users/passwd.txt
 
 COPY mosquitto.conf config/
 COPY acl.txt config/

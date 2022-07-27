@@ -1,4 +1,4 @@
 user admin
 topic readwrite #
 
-pattern readwrite %u
+pattern readwrite %u/#
