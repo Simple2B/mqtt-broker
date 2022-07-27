@@ -7,7 +7,7 @@ RUN mkdir -p log
 RUN mkdir -p data
 RUN mkdir -p users
 
-COPY passwd.txt config/passwd.txt
+COPY passwd.txt users/passwd.txt
 
 COPY mosquitto.conf config/
 COPY acl.txt config/
