@@ -6,7 +6,7 @@ RUN mkdir -p config
 RUN mkdir -p log
 RUN mkdir -p data
 
-RUN touch config/passwd.txt
+COPY passwd.txt config/passwd.txt
 
 COPY mosquitto.conf config/
 COPY acl.txt config/
